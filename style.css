@@ -55,15 +55,25 @@ header nav ul li a {
     background-attachment: fixed;
 }
 
-.hero div {
+.hero-text {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 900px;
+    padding-bottom: 100px;
 }
 
-.hero p {
-    width: 35%;
-    margin-left: 20px;
+.hero p, .hero h2 {
+    text-align: center;
+}
+
+.hero img {
+    width: 150px;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .row {
@@ -76,7 +86,7 @@ header nav ul li a {
     padding: 10px;
 }
 
-img {
+.box img {
     width: 100%;
     height: auto;
     border: 3px solid black;
