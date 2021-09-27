@@ -1,0 +1,183 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Yaldevi', sans-serif;
+    font-weight: 200;
+}
+
+header {
+    padding: 20px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 50;
+}
+
+header h1 {
+    font-size: xx-large;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+header p {
+    font-size: medium;
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+}
+
+
+.hero {
+    background: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, .4)), url("./images/mitchell-orr-Ddp_T92Vjus-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 400px;
+    background-attachment: fixed;
+}
+
+.hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p {
+    width: 35%;
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+    padding-left: 200px;
+}
+
+.column {
+    width: 50%;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+}
+
+.box {
+    position: relative;
+    display: block;
+    opacity: 80%;
+}
+
+.box h3 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    font-size: 40px;
+    color: black;
+    text-shadow: white;
+    opacity: 90%;
+    background-color: rgba(252, 248, 248, 0.719);
+    border-radius: 12px;
+    padding: 3px 9px;
+}
+
+.box .seo-refactor {
+    font-size: 20px;
+}
+
+.box:hover {
+    opacity: 50%;
+}
+
+
+.center {
+    text-align: center;
+}
+.contact {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-gray {
+    background: linear-gradient(rgba(255,255,255, 1), rgba(255,255,255, .4)), url("./images/mitchell-orr-Ddp_T92Vjus-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    padding: 80px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact a {
+    text-decoration: none;
+    color:black;
+    font-size: large;
+}
+
+.contact a:hover {
+    font-style: italic;
+}
+
+#projects {
+    padding: 80px 0;
+}
+
+.opacity {
+    background-color: rgba(252, 248, 248, 0.719);
+    border-radius: 12px;
+    padding: 20px;
+    display: inline-block;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+header nav ul{
+    flex-direction: column;
+}
+
+.name {
+    order: -1;
+    padding-bottom: 20px;
+}
+
+.row {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.column {
+    width: 100%;
+}
+
+.box h3 {
+    font-size: 20px;
+}
+}
